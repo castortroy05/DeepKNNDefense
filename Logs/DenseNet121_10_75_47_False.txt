@@ -1,0 +1,6 @@
+Model Architecture: DenseNet121
+Poison Index: 47
+K Value: 75
+classBalance: [50, 50, 50, 50, 50, 50, 10, 50, 50, 50]
+Replicate Imbalance: False
+Status: Expected n_neighbors <= n_samples,  but n_samples = 5, n_neighbors = 75

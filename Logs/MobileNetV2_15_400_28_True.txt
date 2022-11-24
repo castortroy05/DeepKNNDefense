@@ -1,0 +1,6 @@
+Model Architecture: MobileNetV2
+Poison Index: 28
+K Value: 400
+classBalance: [50, 50, 50, 50, 50, 50, 15, 50, 50, 50]
+Replicate Imbalance: True
+Status: Expected n_neighbors <= n_samples,  but n_samples = 5, n_neighbors = 400

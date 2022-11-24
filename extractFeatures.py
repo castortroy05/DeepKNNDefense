@@ -49,7 +49,7 @@ for modelName in architecture:
         model = nn.DataParallel(model)
 
     CheckPoint = torch.load(checkPointDirectory + "/" + modelName + ".pth")
-    model.load_state_dict(CheckPoint["net"])
+    model.load_state_dict(CheckPoint["net"], strict=False)
     model.to(device)
 
     files = ["./CIFAR10/DataSplit/trainFile.txt", "./CIFAR10/DataSplit/testFile.txt",

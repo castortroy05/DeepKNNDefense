@@ -1,0 +1,6 @@
+Model Architecture: DPN92
+Poison Index: 47
+K Value: 110
+classBalance: [50, 50, 50, 50, 50, 50, 10, 50, 50, 50]
+Replicate Imbalance: True
+Status: Expected n_neighbors <= n_samples,  but n_samples = 5, n_neighbors = 110

@@ -118,7 +118,7 @@ def featureExtraction(model, device, testData):
         for img, ID, fileName in tqdm(testData):
             img = img.to(device)
 
-            featureVector = model.module.penultimate(img)
+            featureVector = model.penultimate(img)
             allFeatureVector = allFeatureVector + [vector for vector in featureVector]
             allID = allID + [i for i in ID]
             allFileNames = allFileNames + [file for file in fileName]

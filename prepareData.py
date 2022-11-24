@@ -1,11 +1,29 @@
 import os
 
-os.mkdir("./CIFAR10/ConvexPolytopePoisons")
-os.mkdir("./CIFAR10/DataSplit")
-os.mkdir("./CIFAR10/Features")
-os.mkdir("./CIFAR10/TestSplit")
-os.mkdir("./CIFAR10/TrainSplit")
-os.mkdir("Logs")
+#check if the directory exists
+if not os.path.exists("./CIFAR10/DataSplit"):
+    os.makedirs("./CIFAR10/DataSplit")
+if not os.path.exists("./CIFAR10/ConvexPolytopePoisons"):    
+    os.mkdir("./CIFAR10/ConvexPolytopePoisons")
+if not os.path.exists("./CIFAR10/Features"):
+    os.mkdir("./CIFAR10/Features")
+if not os.path.exists("./CIFAR10/TestSplit"):
+    os.mkdir("./CIFAR10/TestSplit")
+if not os.path.exists("./CIFAR10/TrainSplit"):
+    os.mkdir("./CIFAR10/TrainSplit")
+if not os.path.exists("Logs"):
+    os.mkdir("Logs")
+
+#concatenate all the modelCheckpointPartitions into one tar file
+for i in modelCheckPointPartitions0:
+    os.system("cat " + i + " >> " + modelCheckpoints.tar.gz)
+    
+#extract the tar file
+os.system("tar -xvf " + modelCheckpoints.tar.gz)
+
+  
+
+
 
 print("Extracting CIFAR10")
 os.system("python ./CIFAR_Download/parseCIFAR.py")

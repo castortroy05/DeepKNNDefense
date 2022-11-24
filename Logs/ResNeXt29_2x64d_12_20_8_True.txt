@@ -1,0 +1,6 @@
+Model Architecture: ResNeXt29_2x64d
+Poison Index: 8
+K Value: 20
+classBalance: [50, 50, 50, 50, 50, 50, 12, 50, 50, 50]
+Replicate Imbalance: True
+Status: Expected n_neighbors <= n_samples,  but n_samples = 5, n_neighbors = 20

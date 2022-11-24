@@ -1,0 +1,8 @@
+Model Architecture: ResNeXt29_2x64d
+Poison Index: 4
+K Value: 10
+classBalance: [50, 50, 50, 50, 50, 50, 35, 50, 50, 50]
+Replicate Imbalance: False
+True Positive: 0 | True Negative: 0 | False Positive: 15 | False Negative: 0
+Matthews Correlation Coefficient: nan
+Status: num_samples should be a positive integer value, but got num_samples=0

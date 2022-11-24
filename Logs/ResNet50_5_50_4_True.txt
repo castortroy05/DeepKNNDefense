@@ -1,0 +1,6 @@
+Model Architecture: ResNet50
+Poison Index: 4
+K Value: 50
+classBalance: [50, 50, 50, 50, 50, 50, 5, 50, 50, 50]
+Replicate Imbalance: True
+Status: Expected n_neighbors <= n_samples,  but n_samples = 25, n_neighbors = 50

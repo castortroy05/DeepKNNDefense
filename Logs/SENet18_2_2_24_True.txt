@@ -1,0 +1,5 @@
+Model Architecture: SENet18
+Poison Index: 24
+K Value: 2
+classBalance: [50, 50, 50, 50, 50, 50, 2, 50, 50, 50]
+Replicate Imbalance: True

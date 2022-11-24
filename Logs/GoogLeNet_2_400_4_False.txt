@@ -1,0 +1,5 @@
+Model Architecture: GoogLeNet
+Poison Index: 4
+K Value: 400
+classBalance: [50, 50, 50, 50, 50, 50, 2, 50, 50, 50]
+Replicate Imbalance: False

@@ -1,0 +1,6 @@
+Model Architecture: SENet18
+Poison Index: 24
+K Value: 50
+classBalance: [50, 50, 50, 50, 50, 50, 7, 50, 50, 50]
+Replicate Imbalance: True
+Status: Expected n_neighbors <= n_samples,  but n_samples = 5, n_neighbors = 50
