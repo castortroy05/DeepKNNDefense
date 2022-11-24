@@ -62,7 +62,7 @@ for modelName in architecture:
 
 
 Q2_Plot = pd.DataFrame(Q2_Statistics)
-ax = sns.pointplot(x="Normalized-K Ratio", y="Matthews Correlation Coefficient", hue="Model Architecture", ci=None, data=Q2_Plot)
+ax = sns.pointplot(x="Normalized-K Ratio", y="Matthews Correlation Coefficient", hue="Model Architecture", errorbar=None, data=Q2_Plot)
 ax.get_legend().set_visible(False)
 plt.title("Deep-KNN Poison Filtering Success")
 plt.savefig(figureDirectory + "fixedClassBalance_CorrelationCoefficient.pdf")
@@ -82,7 +82,7 @@ for modelName in architecture:
         Q3_Statistics["Test Accuracy"].append(np.mean(tempDataFrame["Test Accuracy"]))
 
 Q3_Plot = pd.DataFrame(Q3_Statistics)
-ax = sns.pointplot(x="Normalized-K Ratio", y="Test Accuracy", hue="Model Architecture", ci=None, data=Q3_Plot)
+ax = sns.pointplot(x="Normalized-K Ratio", y="Test Accuracy", hue="Model Architecture", errorbar=None, data=Q3_Plot)
 ax.get_legend().set_visible(False)
 plt.title("Deep-KNN Test Accuracy")
 plt.savefig(figureDirectory + "fixedClassBalance_TestAccuracy.pdf")
@@ -134,7 +134,7 @@ for modelName in architecture:
             Q5_Statistics["Matthews Correlation Coefficient"].append(np.mean(tempDataFrame["Matthews Correlation Coefficient"]))
 
 Q5_Plot = pd.DataFrame(Q5_Statistics)
-ax = sns.catplot(x="Class Balance Ratio", y="Matthews Correlation Coefficient", hue="Model Architecture",  data=Q5_Plot, col="Replicate Imbalance", order=[i / fixedClassBalance for i in classBalance], kind="point", ci=None, legend=False)
+ax = sns.catplot(x="Class Balance Ratio", y="Matthews Correlation Coefficient", hue="Model Architecture",  data=Q5_Plot, col="Replicate Imbalance", order=[i / fixedClassBalance for i in classBalance], kind="point", errorbar=None, legend=False)
 plt.subplots_adjust(top=0.85)
 ax.fig.suptitle("Deep-KNN Poison Filtering Success")
 ax.set_xticklabels(rotation=45)
@@ -158,7 +158,7 @@ for modelName in architecture:
             Q6_Statistics["Test Accuracy"].append(np.mean(tempDataFrame["Test Accuracy"]))
 
 Q6_Plot = pd.DataFrame(Q6_Statistics)
-ax = sns.catplot(x="Class Balance Ratio", y="Test Accuracy", hue="Model Architecture",  data=Q6_Plot, col="Replicate Imbalance", order=[i / fixedClassBalance for i in classBalance], kind="point", ci=None, legend=False)
+ax = sns.catplot(x="Class Balance Ratio", y="Test Accuracy", hue="Model Architecture",  data=Q6_Plot, col="Replicate Imbalance", order=[i / fixedClassBalance for i in classBalance], kind="point", errorbar=None, legend=False)
 plt.subplots_adjust(top=0.85)
 ax.fig.suptitle("Deep-KNN Test Accuracy")
 ax.set_xticklabels(rotation=45)

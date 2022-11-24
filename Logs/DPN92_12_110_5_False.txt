@@ -1,5 +1,0 @@
-Model Architecture: DPN92
-Poison Index: 5
-K Value: 110
-classBalance: [50, 50, 50, 50, 50, 50, 12, 50, 50, 50]
-Replicate Imbalance: False

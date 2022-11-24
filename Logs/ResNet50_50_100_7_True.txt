@@ -1,5 +1,0 @@
-Model Architecture: ResNet50
-Poison Index: 7
-K Value: 100
-classBalance: [50, 50, 50, 50, 50, 50, 50, 50, 50, 50]
-Replicate Imbalance: True
