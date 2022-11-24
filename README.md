@@ -7,15 +7,7 @@ Install required python packages in the requirements.txt file before continuing.
 ```bash
 python prepareData.py
 ```
-
-concatenate all modelCheckPoints0X.tar into a single file and extract the combined tarball into a folder "modelCheckPoints"
-
-```bash
-cat modelCheckPointParition* > modelCheckPoints.tar.gz
-tar -xzf modelCheckPoints.tar.gz
-```
-
-NOTE: This code was written on a multi-GPU setup with nn.DataParallel. You may need to manually adjust the keys of the state dictionaries to load them on your machine.
+file concatenation should take place inside the prepareData file. No longer set to run on multi GPU's
 
 ## Running All Experiments
 In order to use the pre-trained model files, stitch the modelCheckPointXX files and unzip it into the same root directory. The KNN defense is implemented directly in the dataloader. To test the performance of the KNN defense against pre-generated convex polytope adversarial examples, run:
