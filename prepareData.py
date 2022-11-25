@@ -15,8 +15,7 @@ if not os.path.exists("Logs"):
     os.mkdir("Logs")
 
 #concatenate all the modelCheckpointPartitions into one tar file
-for i in modelCheckPointPartitions0:
-    os.system("cat " + i + " >> " + modelCheckpoints.tar.gz)
+os.system("cat modelCheckPointPartition00 modelCheckPointPartition01 modelCheckPointPartition02 modelCheckPointPartition03 modelCheckPointPartition04 modelCheckPointPartition05 modelCheckPointPartition06 modelCheckPointPartition07 > modelCheckPoints.tar.gz")
     
 #extract the tar file
 os.system("tar -xvf " + modelCheckpoints.tar.gz)
